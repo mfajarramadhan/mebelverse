@@ -1,0 +1,112 @@
+@import 'font.css';
+@import 'root.css';
+
+
+
+body {
+    padding: 0; margin: 0;
+    background: white;
+    /* background: var(--blue_gradient3); */
+    /* min-height: 100vh; */
+    align-items: center; justify-content: center; display: flex; flex-direction: column;
+}
+p {margin: 10px; max-width: 300px; text-align: center;}
+#subtitle {margin: 0px; text-align: center; width: 100%;}
+#title {
+    margin: 0px; color: blue;
+    text-shadow: 0px 0px 10px rgba(217, 248, 253, 0.5); text-align: center;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px; background-color: white;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 7px; padding: 4px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--blue_gradient3);
+    border-radius: 10px;
+}
+
+
+
+.title_img_container {
+    background-color: white;
+    width: 100%; height: 35vh; padding: 20px 0px;
+    align-items: center; justify-content: center; display: flex;
+}
+.title_img_container img {
+    height: 100%;
+}
+
+
+
+form {
+    /* margin: 40px 0px; */
+    background-color: white;
+    padding: 20px; width: calc(100% - 40px);
+    /* border-radius: 12px; */
+    box-shadow: var(--boxShadow1);
+}
+form table {
+    width: 100%;
+}
+form table label {padding-left: 0px; margin-left: 0px;}
+form table tr {align-items: center; justify-content: center; display: flex;}
+form table td:first-child {
+    flex: 4;
+}
+form table td:last-child {
+    flex: 5;
+}
+form table td {padding: 8px;}
+
+form table td input {
+    width: calc(100% - 8px - 4px);
+    padding: calc(4px + 2px);
+}
+form table td select {width: calc(100%); padding: 4px; font-size: .9em;}
+form table td select option {font-size: 1em;}
+form table td textarea {
+    width: calc(100% - 8px + 2px - 4px); padding: 4px; resize: none;
+    margin-top: 4px; font-size: .9em;
+}
+form table td input, form table td select, form table td textarea {
+    background-color: white;
+    padding-top: 6px; padding-bottom: 6px;
+    border-radius: 6px; font-size: .9em;
+    outline: unset; border: unset;
+    box-shadow: var(--boxShadow1);
+    outline: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+#cek_cacat {
+    width: unset; margin-left: unset; transform: scale(1.2);
+}
+.label_textarea {
+    margin-bottom: 10px;
+}
+
+.submit_form {
+    width: 100%;
+    align-items: center; justify-content: center; display: flex; gap: 10px;
+    flex-wrap: wrap;
+}
+.submit_form button {
+    min-width: 150px; cursor: pointer;
+    padding: 10px 20px; background: var(--blue_gradient2); color: white; font-size: 1em; border: unset;
+    border-radius: 10px;
+    transition: .1s;
+}
+.submit_form button:hover {
+    transform: scale(1.02); filter: brightness(110%);
+}
+.submit_form #upload {
+}
+.submit_form #batal {
+    background: #a4abb6;
+}

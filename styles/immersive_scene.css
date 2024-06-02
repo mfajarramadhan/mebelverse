@@ -1,0 +1,47 @@
+@import 'font.css';
+@import 'root.css';
+
+body {padding: 0; margin: 0;}
+
+#scene {
+    width: 100%; height: 100vh;
+}
+
+
+#black_fade {
+    z-index: 110; pointer-events: none;
+    position: fixed; top: 0px; left: 0px;
+    width: 100%; height: 100vh; background-color: black;
+    align-items: center; justify-content: center; display: flex; flex-direction: column;
+}
+#loading_log {
+    color: white; letter-spacing: 2px; pointer-events: none;
+}
+
+@keyframes black_fade {
+    0% {background-color: black;}
+    100% {background-color: rgba(0, 0, 0, 0);}
+}
+@keyframes loading_log {
+    0% {color: white;}
+    100% {color: rgba(255, 255, 255, 0); visibility: hidden;}
+}
+
+
+#VRButton {
+    all: unset !important; transition: .16s !important; cursor: pointer !important;
+    width: 180px !important; text-align: center !important; border-radius: 12px !important;
+    font-weight: bold !important; color: white !important;
+    bottom: 5vh !important; left: calc(50% - 90px - 20px) !important;
+    z-index: 100 !important;
+    position: fixed !important;
+    background: rgba(255, 255, 255, 0.3) !important;
+    padding: 12px 20px !important;
+    box-shadow: var(--boxShadow2), inset 2px 2px 5px rgba(0, 0, 0, 0.2) !important;
+}
+#VRButton:hover {
+    transform: scale(1.06) !important;
+    background: white !important;
+    color: blueviolet !important;
+    /* filter: brightness(130%) !important; */
+}

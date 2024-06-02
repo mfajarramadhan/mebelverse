@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import '../styles/root.css'; @import '../styles/font.css';
+        html {width: 100%; height: 100%;}
+        body {
+            padding: 0px; margin: 0px; background: white;
+            width: 100%; height: 100%; align-items: center; justify-content: center; display: flex;
+            flex-direction: column; overflow: hidden;
+        }
+        #title {
+            margin: 0px; color: blue;
+            text-shadow: 0px 0px 10px rgba(217, 248, 253, 0.5); text-align: center;
+        }
+
+        #subtitle {
+            margin: 5px; text-align: center; width: 100%;
+            margin: 10px; max-width: 300px; text-align: center;
+        }
+        #btn_login {
+            all: unset; cursor: pointer; transition: .11s;
+            margin: 4px; padding: 8px; width: 80%; max-width: 250px; border-radius: 100vh;
+            background: var(--blue_gradient2); color: white; box-shadow: var(--boxShadow1);
+            text-align: center;
+        }
+        #btn_login:hover {
+            transform: scale(1.028); filter: brightness(105%);
+        }
+        .title_img_container {
+            background-color: white;
+            width: 100%; height: 35vh; padding: 20px 0px;
+            align-items: center; justify-content: center; display: flex;
+        }
+        .title_img_container img {
+            height: 100%;
+        }
+        a {color: blue; cursor: pointer; font-weight: bold;}
+        br {margin-bottom: 30px;}
+    </style>
+    <title>Thank You!</title>
+</head>
+<body>
+    <div class="title_img_container">
+        <img src="../img/avga/avga.webp">
+    </div>
+    <h2 id="title">Terima kasih!</h2>
+    <p id="subtitle">Ulasanmu sangat membantu review produk ini</p>
+    <button id="btn_login" onclick="window.parent.location.href = '../home.php'">Tutup</button>
+</body>
+</html>

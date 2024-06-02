@@ -1,0 +1,61 @@
+@import 'root.css';
+@import 'font.css';
+
+body {
+    background: white; padding: 0; margin: 0;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px; background-color: white;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 7px; padding: 4px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--blue_gradient3);
+    border-radius: 10px;
+}
+
+
+
+
+p {font-size: .9em; margin: 0px;}
+h3 {margin-top: 6px; text-align: center;}
+h2{margin: 8px;}
+h1{margin-bottom: 8px;}
+
+.ulasan {
+    padding: 10px; flex: 1;
+    /* background: var(--color1); */
+    /* box-shadow: var(--boxShadow2); border-radius: 20px; */
+}
+.ulasan h2 {margin-top: 0px;}
+.ulasan_item {
+    padding: 9px; background: white; margin: 9px 0px; display: flex; flex-direction: column; gap: 4px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); border-radius: 8px; cursor: default;
+    outline: 1px solid rgba(128, 128, 128, 0.4);
+} .ulasan_item:hover {background-color: white;}
+#blm_ada_ulasan {
+    width: 100%; min-height: 250px; align-items: center; justify-content: center; display: flex;
+    text-align: center;
+}
+#ulasan_container {
+    min-height: 250px;
+}
+#ulasan_container form {
+    width: 100%; align-items: center; justify-content: center; display: flex;
+}
+#ulasan_container button {
+    all: unset; margin: 6px 0px; font-size: .9em; cursor: pointer; color: blue;
+    width: 100%; align-items: center; justify-content: center; display: flex;
+    transition: .12s; padding: 2px 0px;
+}
+#ulasan_container button:hover {transform: scale(1.05);}
+#semua_ulasan {
+    max-width: 420px; height: 80vh;
+}

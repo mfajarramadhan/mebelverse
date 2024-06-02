@@ -1,0 +1,109 @@
+@import 'font.css';
+@import 'root.css';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.interactive,
+.interactive2 {
+    transition: .15s;
+    /* outline: .4px solid rgba(128, 128, 128, 0.3); */
+}
+
+.interactive:hover {
+    transform: scale(1.025);
+    background: var(--color2);
+}
+
+.interactive2:hover {
+    transform: scale(1.013);
+    background: var(--color2);
+}
+
+#container {
+    max-width: 1000px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 30px auto;
+    /* gap: 20px; */
+}
+
+#container a {
+    width: 100%;
+}
+
+div.detail {
+    min-width: 620px;
+    height: 150px;
+    background: var(--color1);
+    padding: 10px;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 2%;
+    box-shadow: var(--boxShadow2);
+    border-radius: 20px;
+}
+
+
+/* gambar */
+div.gambar {
+    min-height: 150px;
+    height: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    /* min-width: 150px; */
+    max-width: 150px;
+    flex: 1;
+    border-radius: 14px;
+    overflow: hidden;
+    background: linear-gradient(-45deg, rgb(63, 63, 243), rgb(1, 1, 129));
+    box-shadow: var(--boxShadow2);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+
+div.gambar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: .35s;
+}
+
+div.gambar img:hover {
+    transform: scale(1.05);
+}
+
+
+div.produk_container {
+    flex: 1;
+    height: 100%;
+    /* overflow: hidden; */
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+div.p_pcs {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.p_harga {
+    /* flex: 1; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

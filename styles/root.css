@@ -1,0 +1,13 @@
+:root {
+    /* --color1: aliceblue; */
+    --color1: linear-gradient(45deg, aliceblue, rgb(132, 180, 224));
+    --color2: rgb(244, 249, 252);
+    --purple1: rgb(183, 0, 255);
+    --blue_gradient1: linear-gradient(-45deg, rgb(63, 63, 243), rgb(1, 1, 129));
+    /* --blue_gradient2: linear-gradient(-45deg, rgb(54, 139, 219), blue); */
+    --blue_gradient2: linear-gradient(-45deg, rgb(210,1,191), blue);
+    --blue_gradient3: linear-gradient(-45deg, rgb(78, 221, 240), rgb(39, 151, 255));
+    --boxShadow1: 1px 2px 3px rgba(0, 0, 0, 0.2);
+    /* --boxShadow1: 0 8px 10px rgba(0, 0, 0, .5); */
+    --boxShadow2: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}

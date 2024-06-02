@@ -1,0 +1,352 @@
+@import 'font.css';
+@import 'root.css';
+
+
+
+.allproduk_container {
+    width: 95%; align-items: center; justify-content: center; display: flex; flex-direction: column;
+    max-width: 1300px; text-overflow: ellipsis;
+}
+.allproduk_container h2 {width: 100%; font-size: 1.3em; color: rgb(108, 114, 122); text-align: center;}
+.allproduk_content {
+    width: 100%;
+    margin: 20px 0px;
+}
+.allproduk{
+    display: flex;
+    gap: 14px;
+    display: flex; align-items: center; justify-content: center;
+    flex-wrap : wrap;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+/* header */
+* {
+    margin: 0; padding: 0;
+}
+body {
+    overflow-x: hidden;
+    display: flex; align-items: center; justify-content: flex-start; flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+a {all: unset;}
+a:hover {all: unset; cursor: pointer;}
+p {font-size: .9em;}
+h2{margin: 8px;}
+h1{margin-bottom: 8px;}
+
+
+
+
+.interactive, .interactive2 {
+    transition: .15s;
+}
+.interactive:hover {transform: scale(1.02); background: var(--color2);}
+.interactive2:hover {transform: scale(1.01); background: var(--color2);}
+
+
+
+.body_content {
+    width: 100%; align-items: center; justify-content: center; display: flex; flex-direction: column;
+}
+#container {
+    max-width: 1300px;
+    align-items: start; justify-content: center;
+    display: flex; flex-wrap: wrap;
+    margin: 30px; gap: 20px;
+}
+
+
+div.detail{
+    min-width: 620px; height: 120%;
+    background: var(--color1);
+    padding: 10px; flex: 2;
+    justify-content: center; align-items: flex-start;
+    display: flex; gap: 2%;
+    box-shadow: var(--boxShadow2);
+    border-radius: 14px;
+}
+.right {
+    min-width: 300px; height: 100%;
+    flex: 1; display: flex; flex-direction: column;
+}
+.ulasan {
+    padding: 10px; flex: 1;
+    background: var(--color1);
+    box-shadow: var(--boxShadow2); border-radius: 14px;
+}
+.ulasan h2 {margin-top: 0px;}
+.ulasan_item {
+    padding: 9px; background: white; margin: 9px 0px; display: flex; flex-direction: column; gap: 4px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); border-radius: 8px; cursor: default;
+} .ulasan_item:hover {background: white;}
+#blm_ada_ulasan {
+    width: 100%; min-height: 250px; align-items: center; justify-content: center; display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#blm_ada_ulasan h3 {color: blue; margin-bottom: 2px;}
+#blm_ada_ulasan img {height: 150px; transform: translateY(-10px);}
+#ulasan_container {
+    min-height: 250px;
+}
+#ulasan_container form {
+    width: 100%; align-items: center; justify-content: center; display: flex;
+}
+#ulasan_container button {
+    all: unset; margin: 6px 0px; font-size: .9em; cursor: pointer; color: blue;
+    width: 100%; align-items: center; justify-content: center; display: flex;
+    transition: .12s; padding: 2px 0px;
+}
+#ulasan_container button:hover {transform: scale(1.05);}
+#semua_ulasan {
+    max-width: 420px; height: 70vh;
+}
+
+
+
+/* gambar */
+div.gambar{
+    min-height: 355px; height: 400px;
+    min-width: 300px;
+    width: 100%;
+    flex: 1; cursor: pointer;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--boxShadow2);
+    align-items: center; justify-content: center; display: flex; object-fit: cover;
+}
+#scene {
+    /* width: 100%; height: 100%; */
+    background: linear-gradient(-45deg, white, rgb(183, 203, 216));
+}
+#scene canvas {
+    width: 100%; height: 100%;
+    transition: .12s; filter: saturate(80%) contrast(85%) brightness(120%);
+}
+#scene:hover canvas {
+    transform: scale(1.04); filter: saturate(97%) contrast(80%) brightness(130%);
+}
+div.gambar img {
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center;
+    transition: .35s;
+}
+div.gambar img:hover {
+    transform: scale(1.05);
+}
+
+
+div.produk_container {
+    flex: 1; height: 400px;
+    /* overflow: hidden; */
+    align-items: flex-start; display: flex; flex-direction: column;
+    justify-content: space-between;
+}
+
+#produk_harga {font-size: 1.15em; color: blue; margin: 2px;}
+#produk_nama {font-size: 1.65em; margin: 2px;}
+
+/* deskripsi */
+div.info{
+    display: flex;
+}
+
+div.set{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+div.set button{
+    border: unset;
+    display: block;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+#btn_myproduct {
+    background: var(--blue_gradient2) !important;
+    padding: 10px 20px !important;
+}
+
+#spek_container {
+    overflow: hidden;
+}
+div.spek{
+    margin-top: 20px; margin-bottom: 40px; gap: 0px;
+    display: flex; flex-direction: row; overflow: hidden;
+    width: calc(200%);
+    text-overflow: clip;
+    transition: .5s;
+}
+div.spek table td:nth-child(1) {
+    padding-right: 50px;
+}
+#deskripsi_area {flex: 1; transition: .3s;}
+#spek_area {width: 300px; flex: 1; transition: .3s;}
+#spek_area table td {padding-top: 3px; padding-bottom: 3px; vertical-align: top;}
+
+
+/* keranjang  */
+div.cart{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+}
+
+div.produk{
+    margin-top: 15px;
+}
+
+div.stock{
+    display: flex;
+    gap: 5px;
+}
+
+#publisher {
+    align-items: center; justify-content: center; display: flex; gap: 12px;
+    padding: 10px; background: var(--color1); margin-bottom: 20px;
+    box-shadow: var(--boxShadow2); border-radius: 14px;
+}
+#publisher:hover {background: var(--color2);}
+#profpic {
+    height: 46px; aspect-ratio: 1/1; border-radius: 100%;
+}
+#publisher button {
+    border: unset; cursor: pointer;
+    align-items: center; justify-content: center; display: flex;
+    padding: 4px; border-radius: 10px;
+    box-shadow: var(--boxShadow1);
+    background: var(--blue_gradient2);
+}
+#publisher button:hover {filter: brightness(120%);}
+#publisher button img {width: 36px; height: 36px; object-fit: cover;}
+#publisher div {width: 100%;}
+#publisher div > h3 {
+    margin-bottom: 4px;
+}
+#publisher_direct {align-items: center; justify-content: center; display: flex; width: 100%; gap: 12px;}
+
+
+
+
+.pesan button {
+    padding: 6px 10px !important; background: var(--blue_gradient2); color: white; font-size: 1em; border: unset;
+    border-radius: 10px;
+}
+#minus, #plus {
+    background: var(--blue_gradient3);
+    box-shadow: var(--boxShadow1);
+    transition: .05s; cursor: pointer;
+}
+#minus:hover, #plus:hover {transform: scale(1.06);}
+#minus:active, #plus:active {transform: scale(1.12);}
+#btn_pesan {
+    transition: .1s;
+    align-items: center; justify-content: center; display: flex; gap: 16px;
+    margin-top: 8px;
+    width: 100%;
+}
+#btn_pesan:hover {filter: brightness(160%); transform: scale(1.06); cursor: pointer;}
+#btn_pesan img {height: 20px;}
+
+
+.pesan input {
+    padding: 10px; border-radius: 10px;
+    width: 100px; text-align: center; border: unset;
+    box-shadow: var(--boxShadow1);
+}
+#set_pesan {
+    align-items: center; justify-content: center; display: flex; gap: 8px;
+}
+#set_pesan button {
+    padding: 10px 20px; box-shadow: var(--boxShadow2);
+    background: var(--blue_gradient3); cursor: pointer; transition: .16s;
+}
+#set_pesan button:hover {
+    transform: scale(1.04);
+}
+
+#input_imaginer {display: none;}
+
+table{
+    border-collapse: collapse;
+}
+
+#additional {
+    width: 100%; max-width: 1300px;
+    align-items: center; justify-content: center; display: flex; flex-direction: column;
+}
+#additional .title {width: 100%; max-width: 1300px; text-align: left;}
+
+
+
+
+
+
+.iframe_container {
+    all: unset; z-index: 200;
+    position: fixed; top: 0px; left: 0px;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    align-items: center; justify-content: center; display: none;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 710px) {
+    #produk_nama {margin-top: 20px;}
+    div.detail {
+        flex-direction: column;
+    }
+    div.gambar{
+        flex: 1;
+        height: 40vh;
+    }
+    #container {
+        margin: 20px 15px;
+    }
+    .interactive:hover {transform: unset;;}
+    .interactive2:hover {transform: unset;}
+}
+@media screen and (max-width: 680px) {
+    div.detail {min-width: unset;}
+}
+@media screen and (max-width: 600px) {
+    div.detail {min-width: unset; background: white; box-shadow: unset;}
+    div.detail:hover {min-width: unset; background: white; box-shadow: unset;}
+    .ulasan {background: unset; box-shadow: unset;}
+    .ulasan:hover {background: unset; box-shadow: unset;}
+    #publisher {background: unset; box-shadow: unset;}
+    #publisher:hover {background: unset; box-shadow: unset;}
+
+    .pesan {width: 100%; font-size: 1.2em;}
+    #set_pesan {width: 100%}
+    .pesan button {padding: 10px 16px;}
+    .pesan input {padding: 10px; font-size: 1.2em;}
+    #btn_pesan:hover {transform: scale(1.02);}
+    .interactive, .interactive2 {background: unset;}
+}

@@ -1,0 +1,52 @@
+@import '../styles/root.css';
+@import '../styles/font.css';
+
+
+html {height: 100%;}
+body {
+    padding: 0; margin: 0; height: 100%; width: 100%; background: white;
+    align-items: center; justify-content: space-between; display: flex; flex-direction: column; gap: 20px;
+}
+h3 {margin: 4px 0px; padding: 0px; text-align: left; color: blue;}
+
+
+#rate_produk_container {
+    width: 100%; padding-top: 10px;
+    align-items: center; justify-content: center; display: flex; flex-direction: column;
+}
+#require_rating {
+    padding: unset; margin: unset; color: red; visibility: hidden;
+    transition: .16s; filter: opacity(0%); transform: translateY(20px);
+}
+#rate {align-items: center; justify-content: center; display: flex; gap: 6px; width: 92%; cursor: pointer;}
+.star {
+    all: unset; filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.1)); transition: .5s;
+}
+.star:hover {transform: scale(1.18);}
+
+
+
+form {
+    width: 100%;
+    align-items: center; justify-content: center; display: flex; flex-direction: column;
+}
+
+form textarea {
+    width: calc(92% - 16px); resize: none;
+    border-radius: 12px; padding: 8px;
+}
+
+
+
+#submit_container {
+    padding-top: 18px; padding-bottom: 14px;
+    width: 92%; align-items: center; justify-content: space-between; display: flex; gap: 6px;
+}
+
+#submit_container button {
+    all: unset; cursor: pointer; transition: .16s;
+    text-align: center; color: white; background: var(--blue_gradient2);
+    flex: 1; padding: 10px 0px; border-radius: 12px;
+}
+#submit_container button:hover {transform: scale(1.015); filter: brightness(110%);}
+#submit_container button:last-child {background: #a4abb6;}

@@ -1,0 +1,119 @@
+@import 'font.css';
+@import 'root.css';
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+h2{
+    text-align: center;
+    margin: 30px 0px;
+}
+p {font-size: .9em;}
+
+body {
+    /* max-width: 1300px; */
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+
+.allproduk_container {
+    width: 100%; align-items: center; justify-content: flex-start; display: flex; flex-direction: column;
+    max-width: 1300px; margin: 12px 0px;
+}
+.allproduk_container h2 {width: 100%;}
+.allproduk_content {
+    width: 95%; margin: 10px 0px;
+}
+.allproduk{
+    width: 100%;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 10px;
+    flex-wrap : wrap;
+}
+
+
+
+
+
+/* Banner */
+div.banner_container{
+    width: 100%; height: 180px;
+    margin-top: 12px;
+    max-width: 1300px;
+    align-items: center; justify-content: center; display: flex;
+}
+.banner {
+    height: 100%; width: 95%;
+    align-items: center; justify-content: center; display: flex; gap: 10px;
+}
+.banner_item {
+    transition: .14s;
+    height: 100%; cursor: pointer;
+    border-radius: 8px; overflow: hidden;
+    box-shadow: var(--boxShadow2);
+} .banner_item:hover {filter: brightness(108%);}
+.banner_left {
+    flex: 2; background: var(--blue_gradient3);
+}
+.banner_left img {
+    transition: .14s;
+    width: 100%; height: 100%; object-fit: cover; object-position: top left;
+}
+.banner_left:hover img {transform: scale(1.04);}
+.banner_right {
+    flex: 1;  background: var(--blue_gradient3);
+}
+.banner_right img {
+    transition: .14s;
+    width: 100%; height: 100%; object-fit: cover; object-position: top left;
+}
+.banner_right:hover img {transform: scale(1.04);}
+
+
+
+
+/* produk */
+div.content{
+    margin: 10px 0; width: 100%;
+    align-items: center; justify-content: center; display: flex;
+}
+div.produk{
+    display: flex;
+    gap: 28px;
+    flex-wrap : wrap;
+}
+
+#no_result {
+    width: 100%; align-items: center; justify-content: center; display: flex; flex-wrap: wrap;
+}
+#no_result img {height: 300px; margin: 10px 0px;}
+#no_result h1 {color: rgb(183, 0, 255);}
+#no_result h2, #no_result p {margin: 0px;}
+
+
+footer{
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: red;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 680px) {
+    .banner_left {display: none;}
+}

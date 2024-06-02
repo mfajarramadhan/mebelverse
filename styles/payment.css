@@ -1,0 +1,44 @@
+@import 'root.css';
+@import 'font.css';
+
+body {
+    margin: 0px; padding: 0px;
+    width: 100%; min-height: 100vh;
+    align-items: center; justify-content: center; display: flex;
+    background: var(--color2);
+}
+
+
+.detail_container {
+    background: white;
+    margin: 40px 0px;
+    padding: 12px; border-radius: 12px; box-shadow: var(--boxShadow2);
+    width: 85%; max-width: 500px;
+}
+
+.detail {
+
+}
+.detail_title {
+    width: 100%; align-items: center; justify-content: center; display: flex; flex-direction: column;
+    margin-bottom: 30px;
+}
+.detail_title img {height: 230px;}
+p {margin: 10px; max-width: 300px; text-align: center;}
+#subtitle {margin: 0px; text-align: center; width: 100%;}
+#title {
+    margin: 0px; color: blue;
+    text-shadow: 0px 0px 10px rgba(217, 248, 253, 0.5); text-align: center;
+}
+
+.detail table tr td {padding: 4px 8px; vertical-align: top;}
+.detail table tr td:nth-child(1) {padding-right: 30px;}
+.detail table tr td:nth-child(3) {padding-left: 0px;max-width: 300px;}
+
+.submit_container {
+    margin-top: 32px; width: 100%; align-items: center; justify-content: center; display: flex;
+    flex-direction: column; gap: 6px;
+}
+#checkout, #batal {
+    width: 80%;
+}
